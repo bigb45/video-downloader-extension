@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PL Video Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="header-logo">🎬</div>
+    <div>
+      <div class="header-title">PL Video Downloader</div>
+      <div class="header-sub">Stream detector &amp; downloader</div>
+    </div>
+    <span class="header-count" id="streamCount">0</span>
+  </div>
+
+  <!-- Main scroll area -->
+  <div class="scroll-area" id="streamList">
+    <!-- Empty state (default) -->
+    <div class="empty-state" id="emptyState">
+      <div class="empty-icon">📡</div>
+      <div class="empty-title">No streams detected</div>
+      <div class="empty-desc">
+        Navigate to a page with a video and play it. Detected streams will appear here automatically.
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-page-title" id="pageTitle">—</div>
+    <button class="btn-refresh" id="btnRefresh">↻ Refresh</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
